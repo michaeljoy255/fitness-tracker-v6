@@ -2,14 +2,23 @@ import { User } from "./classes/user";
 import { Exercise } from "./classes/exercise";
 import { Routine } from "./classes/routine";
 import { Measurement } from "./classes/measurement";
-
 import "./styles.scss";
 
 console.log("Hello");
 
-// Create initial user
+/**
+ * @todo list below in comments
+ */
+
+// Get a UUID package
+// Build class constructors
+// Class methods?
+
+// When DOM ready:
+// Create initial user and log it
 
 // Get data to seed user exercises, routines, and measurements
+// Pull it from your JSON data project if you can
 
 // Create routine list home page
 

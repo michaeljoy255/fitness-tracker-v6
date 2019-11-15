@@ -54,6 +54,7 @@ export enum TempoType {
 
 /**
  * All available exercise names
+ * @exports
  */
 export enum ExerciseType {
   ELLIPTICAL_WARMUP = "Elliptical, Warmup",
