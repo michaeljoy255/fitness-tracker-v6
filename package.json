@@ -7,7 +7,7 @@
     "start": "webpack-dev-server  --config webpack.dev.js",
     "build": "npm run build:prod && npm run build:json",
     "build:prod": "webpack --config webpack.prod.js",
-    "build:json": "node src/fitness-data/fitness-data.js > dist/fitness-data.json"
+    "build:json": "node src/fitness-data/build-fitness-data.js > dist/fitness-data.json"
   },
   "repository": {
     "type": "git",
@@ -41,5 +41,8 @@
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0",
     "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "uuid": "^3.3.3"
   }
 }
