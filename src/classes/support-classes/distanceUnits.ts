@@ -7,9 +7,14 @@ export class DistanceUnits {
   miles: number;
   kilometers: number;
 
-  constructor(unitPref: UnitPrefType, distance: number) {
-    this.miles = this.getMiles(unitPref, distance);
-    this.kilometers = this.getKilometers(unitPref, distance);
+  constructor({ unitPref = UnitPrefType.IMPERIAL, distance = null } = {}) {
+    if (distance) {
+      this.miles = this.getMiles(unitPref, distance);
+      this.kilometers = this.getKilometers(unitPref, distance);
+    } else {
+      this.miles = null;
+      this.kilometers = null;
+    }
   }
 
   getMiles(unitPref: UnitPrefType, distance: number) {

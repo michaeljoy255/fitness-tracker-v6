@@ -12,24 +12,24 @@ export class Exercise {
   name: ExerciseType;
   category: CategoryType;
   desc: string;
-  inputs: Inputs[];
+  inputs: Inputs;
   objectives: Objective[];
   exerciseRecords: ExerciseRecord[];
 
-  constructor(
-    name: ExerciseType,
-    category: CategoryType,
-    desc: string,
-    inputs: Inputs[],
-    objectives: Objective[],
-    exerciseRecords?: ExerciseRecord[]
-  ) {
+  constructor({
+    name = null,
+    category = null,
+    desc = null,
+    inputs = null,
+    objectives = [],
+    exerciseRecords = []
+  } = {}) {
     this.id = uuid.v4();
     this.name = name;
-    this.category = category || null;
-    this.desc = desc || "";
-    this.inputs = inputs || null;
-    this.objectives = objectives || null;
-    this.exerciseRecords = exerciseRecords || [];
+    this.category = category;
+    this.desc = desc;
+    this.inputs = inputs;
+    this.objectives = objectives;
+    this.exerciseRecords = exerciseRecords;
   }
 }

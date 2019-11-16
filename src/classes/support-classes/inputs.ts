@@ -8,13 +8,13 @@ export class Inputs {
   hasWeight: boolean; // 1 input
   hasReps: boolean; // 1 input
 
-  constructor(
-    hasNotes: boolean,
-    hasDuration: boolean,
-    hasDistance: boolean,
-    hasWeight: boolean,
-    hasReps: boolean
-  ) {
+  constructor({
+    hasNotes = false,
+    hasDuration = false,
+    hasDistance = false,
+    hasWeight = false,
+    hasReps = false
+  } = {}) {
     this.hasNotes = hasNotes;
     this.hasDuration = hasDuration;
     this.hasDistance = hasDistance;

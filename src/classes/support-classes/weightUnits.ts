@@ -7,9 +7,14 @@ export class WeightUnits {
   pounds: number;
   kilograms: number;
 
-  constructor(unitPref: UnitPrefType, weight: number) {
-    this.pounds = this.getPounds(unitPref, weight);
-    this.kilograms = this.getKilograms(unitPref, weight);
+  constructor({ unitPref = UnitPrefType.IMPERIAL, weight = null } = {}) {
+    if (weight) {
+      this.pounds = this.getPounds(unitPref, weight);
+      this.kilograms = this.getKilograms(unitPref, weight);
+    } else {
+      this.pounds = null;
+      this.kilograms = null;
+    }
   }
 
   getPounds(unitPref: UnitPrefType, weight: number) {

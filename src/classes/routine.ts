@@ -10,14 +10,10 @@ export class Routine {
   exerciseIds: string[];
   routineRecords: RoutineRecord[];
 
-  constructor(
-    name: string,
-    exerciseIds: string[],
-    routineRecords?: RoutineRecord[]
-  ) {
+  constructor({ name = null, exerciseIds = [], routineRecords = [] } = {}) {
     this.id = uuid.v4();
     this.name = name;
     this.exerciseIds = exerciseIds;
-    this.routineRecords = routineRecords || [];
+    this.routineRecords = routineRecords;
   }
 }

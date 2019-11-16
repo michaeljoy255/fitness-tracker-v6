@@ -9,9 +9,9 @@ export class Measurement {
    * @todo @feature include other measurements like chest, arms, waist, etc.
    */
 
-  constructor(bodyWeight: number, bodyFat: number) {
+  constructor({ bodyWeight = null, bodyFat = null } = {}) {
     this.createdAt = new Date();
-    this.bodyWeight = bodyWeight || null;
-    this.bodyFat = bodyFat || null;
+    this.bodyWeight = bodyWeight;
+    this.bodyFat = bodyFat;
   }
 }

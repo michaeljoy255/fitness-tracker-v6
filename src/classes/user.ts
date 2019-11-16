@@ -12,15 +12,15 @@ export class User {
   routines: Routine[];
   measurements: Measurement[];
 
-  constructor(
-    units: UnitPrefType,
-    exercises?: Exercise[],
-    routines?: Routine[],
-    measurements?: Measurement[]
-  ) {
+  constructor({
+    units = UnitPrefType.IMPERIAL,
+    exercises = [],
+    routines = [],
+    measurements = []
+  } = {}) {
     this.units = units;
-    this.exercises = exercises || [];
-    this.routines = routines || [];
-    this.measurements = measurements || [];
+    this.exercises = exercises;
+    this.routines = routines;
+    this.measurements = measurements;
   }
 }

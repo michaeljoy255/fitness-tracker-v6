@@ -6,9 +6,9 @@ export class RoutineRecord {
   startTime: number;
   endTime: number;
 
-  constructor(startTime?: number, endTime?: number) {
+  constructor({ startTime = null, endTime = null } = {}) {
     this.createdAt = new Date();
-    this.startTime = startTime || null;
-    this.endTime = endTime || null;
+    this.startTime = startTime;
+    this.endTime = endTime;
   }
 }

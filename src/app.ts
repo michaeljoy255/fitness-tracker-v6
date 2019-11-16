@@ -2,19 +2,15 @@ import { UnitPrefType } from "./enums/enums";
 import { User } from "./classes/user";
 import { Exercise } from "./classes/exercise";
 import "./styles.scss";
+import { Measurement } from "./classes/measurement";
+import { WeightUnits } from "./classes/support-classes/weightUnits";
+import { Objective } from "./classes/support-classes/objective";
 
 console.log("Hello");
 
 /**
  * @todo list below in comments
  */
-
-// Class constructors with named parameters (IMPORTANT!!!)
-function namedParams({ name = "default", amount = 0 } = {}) {
-  console.log(name, amount);
-}
-namedParams({ name: "testing", amount: 175 });
-// -------------------------------------------------------
 
 // NPM: gh-pages package so you can start using the json data
 
@@ -35,6 +31,13 @@ namedParams({ name: "testing", amount: 175 });
  * Main
  */
 document.addEventListener("DOMContentLoaded", e => {
-  let user = new User(UnitPrefType.IMPERIAL);
+  let user = new User({ units: UnitPrefType.METRIC });
+  user.measurements.push(new Measurement());
   console.log(user);
+
+  let testw = new WeightUnits({ weight: 5 });
+  console.log(testw);
+
+  let obj = new Objective();
+  console.log(obj);
 });

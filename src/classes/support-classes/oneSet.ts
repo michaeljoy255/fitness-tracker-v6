@@ -10,15 +10,15 @@ export class OneSet {
   weight: WeightUnits; // WeightUnits
   reps: number;
 
-  constructor(
-    duration?: string,
-    distance?: DistanceUnits,
-    weight?: WeightUnits,
-    reps?: number
-  ) {
-    this.duration = duration || null;
-    this.distance = distance || null;
-    this.weight = weight || null;
-    this.reps = reps || null;
+  constructor({
+    duration = null,
+    distance = null,
+    weight = null,
+    reps = null
+  } = {}) {
+    this.duration = duration;
+    this.distance = distance;
+    this.weight = weight;
+    this.reps = reps;
   }
 }

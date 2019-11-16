@@ -66,6 +66,7 @@ export enum TempoType {
  * All available exercise names
  */
 export enum ExerciseType {
+  MISC_EXERCISE = "Miscellaneous Exercise",
   ELLIPTICAL_WARMUP = "Elliptical, Warmup",
   ELLIPTICAL_INTERVAL = "Elliptical, Intervals",
   STAIR_STEPPER = "Stair Stepper Machine",
