@@ -1,19 +1,7 @@
 import { UnitPrefType } from "./enums/enums";
 import { User } from "./classes/user";
+import { seedUserData } from "./helpers/helpers";
 import "./styles.scss";
-
-console.log("Hello");
-
-/**
- * @todo list below in comments
- */
-
-// ----- Class methods -----
-// User - create exercise, routine, and measurement
-
-// Create routine list home page
-// Start a routine
-// Record exercise and routine records (clipboard function)
 
 /**
  * Main
@@ -21,23 +9,22 @@ console.log("Hello");
 document.addEventListener("DOMContentLoaded", e => {
   let user = new User({ units: UnitPrefType.IMPERIAL });
 
-  // Fetch fitness JSON data for seeding user exercises and routines
-  fetch(
-    "https://michaeljoy255.github.io/fitness-tracker-v6/fitness-data.json",
-    {
-      method: "GET"
-    }
-  )
-    .then(res => {
-      return res.json();
-    })
-    .then(data => {
-      user.exercises = data.exercises;
-      user.routines = data.routines;
-    })
-    .catch(err => {
-      console.error(`Problem fetching JSON data: ${err}`);
-    });
+  // Seed user data by fetching fitness JSON data
+  user = seedUserData(user);
 
-  console.log(user);
+  // Create routine list for home page
+  /**
+   * @todo Research Promises as this won't work without them (most likely)
+   */
+  try {
+    console.log(user);
+
+    console.log("test");
+    user.routines.forEach(rout => {
+      console.log(rout.name);
+    });
+    // create home page routine list
+  } catch (err) {
+    console.error(`Unable to create routine list: ${err}`);
+  }
 });
