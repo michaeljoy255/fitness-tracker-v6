@@ -1,9 +1,7 @@
-import { IMeasurement } from "../interfaces/interfaces";
-
 /**
  * @todo
  */
-export class Measurement implements IMeasurement {
+export class Measurement {
   readonly createdAt: Date;
   bodyWeight: number;
   bodyFat: number;
@@ -13,7 +11,7 @@ export class Measurement implements IMeasurement {
 
   constructor(bodyWeight: number, bodyFat: number) {
     this.createdAt = new Date();
-    this.bodyWeight = bodyWeight;
-    this.bodyFat = bodyFat;
+    this.bodyWeight = bodyWeight || null;
+    this.bodyFat = bodyFat || null;
   }
 }

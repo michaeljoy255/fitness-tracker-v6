@@ -1,10 +1,9 @@
 import { ConvertConstant, UnitPrefType } from "../../enums/enums";
-import { IWeightUnits } from "../../interfaces/interfaces";
 
 /**
  * @todo
  */
-export class WeightUnits implements IWeightUnits {
+export class WeightUnits {
   pounds: number;
   kilograms: number;
 

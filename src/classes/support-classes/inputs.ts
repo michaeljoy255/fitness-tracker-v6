@@ -1,9 +1,7 @@
-import { IInputs } from "../../interfaces/interfaces";
-
 /**
  * @todo
  */
-export class Inputs implements IInputs {
+export class Inputs {
   hasNotes: boolean; // 1 input
   hasDuration: boolean; // 3 inputs (H : M : S)
   hasDistance: boolean; // 1 input

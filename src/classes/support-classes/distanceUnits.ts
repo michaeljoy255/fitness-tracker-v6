@@ -1,10 +1,9 @@
 import { ConvertConstant, UnitPrefType } from "../../enums/enums";
-import { IDistanceUnits } from "../../interfaces/interfaces";
 
 /**
  * @todo
  */
-export class DistanceUnits implements IDistanceUnits {
+export class DistanceUnits {
   miles: number;
   kilometers: number;
 

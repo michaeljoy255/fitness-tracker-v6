@@ -1,10 +1,9 @@
 import { ObjectiveType } from "../../enums/enums";
-import { IObjective } from "../../interfaces/interfaces";
 
 /**
  * @todo
  */
-export class Objective implements IObjective {
+export class Objective {
   type: ObjectiveType;
   text: string;
 

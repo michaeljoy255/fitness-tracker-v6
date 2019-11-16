@@ -4,6 +4,9 @@ import {
   ObjectiveType,
   ExerciseType
 } from "../enums/enums";
+import { Exercise } from "../classes/exercise";
+import { Routine } from "../classes/routine";
+import { Measurement } from "../classes/measurement";
 
 /**
  * @todo
@@ -104,7 +107,7 @@ export interface IMeasurement {
  */
 export interface IUser {
   units: UnitPrefType;
-  exercises: IExercise[];
-  routines: IRoutine[];
-  measurements: IMeasurement[];
+  exercises?: Exercise[];
+  routines?: Routine[];
+  measurements?: Measurement[];
 }

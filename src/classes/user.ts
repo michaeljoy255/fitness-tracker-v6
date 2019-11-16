@@ -1,29 +1,26 @@
 import { UnitPrefType } from "../enums/enums";
-import {
-  IUser,
-  IExercise,
-  IRoutine,
-  IMeasurement
-} from "../interfaces/interfaces";
+import { Exercise } from "../classes/exercise";
+import { Routine } from "../classes/routine";
+import { Measurement } from "../classes/measurement";
 
 /**
  * @todo
  */
-export class User implements IUser {
+export class User {
   units: UnitPrefType;
-  exercises: IExercise[];
-  routines: IRoutine[];
-  measurements: IMeasurement[];
+  exercises: Exercise[];
+  routines: Routine[];
+  measurements: Measurement[];
 
   constructor(
     units: UnitPrefType,
-    exercises: IExercise[],
-    routines: IRoutine[],
-    measurements: IMeasurement[]
+    exercises?: Exercise[],
+    routines?: Routine[],
+    measurements?: Measurement[]
   ) {
     this.units = units;
-    this.exercises = exercises;
-    this.routines = routines;
-    this.measurements = measurements;
+    this.exercises = exercises || [];
+    this.routines = routines || [];
+    this.measurements = measurements || [];
   }
 }

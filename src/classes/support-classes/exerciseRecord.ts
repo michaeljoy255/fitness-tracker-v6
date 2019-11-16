@@ -1,13 +1,13 @@
-import { IExerciseRecord, IOneSet } from "../../interfaces/interfaces";
+import { OneSet } from "./oneSet";
 
 /**
  * @todo
  */
-export class ExerciseRecord implements IExerciseRecord {
+export class ExerciseRecord {
   readonly createdAt: Date;
-  sets: IOneSet[];
+  sets: OneSet[];
 
-  constructor(sets: IOneSet[]) {
+  constructor(sets: OneSet[]) {
     this.createdAt = new Date();
     this.sets = sets;
   }

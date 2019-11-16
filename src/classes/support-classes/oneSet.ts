@@ -1,27 +1,24 @@
-import {
-  IOneSet,
-  IDistanceUnits,
-  IWeightUnits
-} from "../../interfaces/interfaces";
+import { DistanceUnits } from "./distanceUnits";
+import { WeightUnits } from "./weightUnits";
 
 /**
  * @todo
  */
-export class OneSet implements IOneSet {
+export class OneSet {
   duration: string; // hours : minutes : seconds
-  distance: IDistanceUnits; // DistanceUnits
-  weight: IWeightUnits; // WeightUnits
+  distance: DistanceUnits; // DistanceUnits
+  weight: WeightUnits; // WeightUnits
   reps: number;
 
   constructor(
-    duration: string,
-    distance: IDistanceUnits,
-    weight: IWeightUnits,
-    reps: number
+    duration?: string,
+    distance?: DistanceUnits,
+    weight?: WeightUnits,
+    reps?: number
   ) {
-    this.duration = duration;
-    this.distance = distance;
-    this.weight = weight;
-    this.reps = reps;
+    this.duration = duration || null;
+    this.distance = distance || null;
+    this.weight = weight || null;
+    this.reps = reps || null;
   }
 }
