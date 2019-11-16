@@ -7,6 +7,16 @@ export enum UnitPrefType {
 }
 
 /**
+ * Conversion constants for Imperial and Metric measurements
+ */
+export enum ConvertConstant {
+  KM_TO_MILE = 0.62137119,
+  MILE_TO_KM = 1.609344,
+  LBS_TO_KG = 0.45359237,
+  KG_TO_LBS = 2.20462262185
+}
+
+/**
  * Categories that exercises can be grouped into
  */
 export enum CategoryType {

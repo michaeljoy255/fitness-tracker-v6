@@ -10,7 +10,9 @@ console.log("Hello");
  * @todo list below in comments
  */
 
-// Class methods?
+// ----- Class methods -----
+// User - create exercise, routine, and measurement
+// Should support classes automatically call constructors when parent class is made?
 
 // When DOM ready:
 // Create initial user and log it
