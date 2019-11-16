@@ -5,9 +5,10 @@
   "main": "app.ts",
   "scripts": {
     "start": "webpack-dev-server  --config webpack.dev.js",
-    "build": "npm run build:prod && npm run build:json",
+    "build": "npm run build:prod && npm run build:json && npm run deploy",
     "build:prod": "webpack --config webpack.prod.js",
-    "build:json": "node src/fitness-data/build-fitness-data.js > dist/fitness-data.json"
+    "build:json": "node src/fitness-data/build-fitness-data.js > dist/fitness-data.json",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
+    "gh-pages": "^2.1.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",

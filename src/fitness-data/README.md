@@ -10,7 +10,7 @@ npm run build:json
 
 ### Accessing the Data
 
-You can access the JSON file at the following URL.
+You can access the JSON file at the following URL once the dist folder has been deployed.d
 
 ```
 https://michaeljoy255.github.io/fitness-tracker-v6/fitness-data.json
