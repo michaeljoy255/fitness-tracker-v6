@@ -15,5 +15,15 @@ export class User implements IUser {
   routines: IRoutine[];
   measurements: IMeasurement[];
 
-  constructor() {}
+  constructor(
+    units: UnitPrefType,
+    exercises: IExercise[],
+    routines: IRoutine[],
+    measurements: IMeasurement[]
+  ) {
+    this.units = units;
+    this.exercises = exercises;
+    this.routines = routines;
+    this.measurements = measurements;
+  }
 }

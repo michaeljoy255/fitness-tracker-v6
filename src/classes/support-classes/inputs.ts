@@ -10,5 +10,17 @@ export class Inputs implements IInputs {
   hasWeight: boolean; // 1 input
   hasReps: boolean; // 1 input
 
-  constructor() {}
+  constructor(
+    hasNotes: boolean,
+    hasDuration: boolean,
+    hasDistance: boolean,
+    hasWeight: boolean,
+    hasReps: boolean
+  ) {
+    this.hasNotes = hasNotes;
+    this.hasDuration = hasDuration;
+    this.hasDistance = hasDistance;
+    this.hasWeight = hasWeight;
+    this.hasReps = hasReps;
+  }
 }

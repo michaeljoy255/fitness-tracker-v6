@@ -4,8 +4,11 @@ import { IExerciseRecord, IOneSet } from "../../interfaces/interfaces";
  * @todo
  */
 export class ExerciseRecord implements IExerciseRecord {
-  readonly createdAt: string;
+  readonly createdAt: Date;
   sets: IOneSet[];
 
-  constructor() {}
+  constructor(sets: IOneSet[]) {
+    this.createdAt = new Date();
+    this.sets = sets;
+  }
 }

@@ -10,8 +10,6 @@ console.log("Hello");
  * @todo list below in comments
  */
 
-// Get a UUID package
-// Build class constructors
 // Class methods?
 
 // When DOM ready:

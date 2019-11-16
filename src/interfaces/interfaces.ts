@@ -41,7 +41,7 @@ export interface IObjective {
  * @todo
  */
 export interface IExerciseRecord {
-  readonly createdAt: string;
+  readonly createdAt: Date;
   sets: IOneSet[];
 }
 
@@ -85,7 +85,7 @@ export interface IRoutine {
  * @todo
  */
 export interface IRoutineRecord {
-  readonly createdAt: string;
+  readonly createdAt: Date;
   startTime: number;
   endTime: number;
 }
@@ -94,7 +94,7 @@ export interface IRoutineRecord {
  * @todo
  */
 export interface IMeasurement {
-  readonly createdAt: string;
+  readonly createdAt: Date;
   bodyWeight: number;
   bodyFat: number;
 }

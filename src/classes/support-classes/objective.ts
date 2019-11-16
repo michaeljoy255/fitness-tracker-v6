@@ -8,5 +8,8 @@ export class Objective implements IObjective {
   type: ObjectiveType;
   text: string;
 
-  constructor() {}
+  constructor(type: ObjectiveType, text: string) {
+    this.type = type;
+    this.text = text;
+  }
 }
