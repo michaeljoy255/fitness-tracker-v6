@@ -546,61 +546,61 @@ fitness_data.exercises.forEach( exer => {
       break;
     case ExerciseType.FLAT_BENCH_PRESS:
       exer.exerciseRecords = [
-        new ExerciseRecord("2019-11-13T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-12").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 130), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 130), 7),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 130), 7),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 130), 6)
         ]),
-        new ExerciseRecord("2019-11-8T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-8").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 122.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 125), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 127.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 130), 10)
         ]),
-        new ExerciseRecord("2019-11-5T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-5").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 120), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 120), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 120), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 120), 10)
         ]),
-        new ExerciseRecord("2019-11-1T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-1").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 117.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 117.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 117.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 117.5), 10)
         ]),
-        new ExerciseRecord("2019-10-29T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-29").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10)
         ]),
-        new ExerciseRecord("2019-10-25T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-25").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10)
         ]),
-        new ExerciseRecord("2019-10-22T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-22").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10)
         ]),
-        new ExerciseRecord("2019-10-18T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-18").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10)
         ]),
-        new ExerciseRecord("2019-10-15T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-15").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10)
         ]),
-        new ExerciseRecord("2019-10-11T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-11").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
@@ -610,61 +610,61 @@ fitness_data.exercises.forEach( exer => {
       break;
     case ExerciseType.INCLINE_BENCH_PRESS:
       exer.exerciseRecords = [
-        new ExerciseRecord("2019-11-12T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-12").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 8),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 8),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 8)
         ]),
-        new ExerciseRecord("2019-11-8T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-8").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 77.5), 10)
         ]),
-        new ExerciseRecord("2019-11-5T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-5").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 72.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 72.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 72.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 72.5), 10)
         ]),
-        new ExerciseRecord("2019-11-1T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-1").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 72.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 72.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 72.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 72.5), 10)
         ]),
-        new ExerciseRecord("2019-10-29T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-29").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10)
         ]),
-        new ExerciseRecord("2019-10-25T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-25").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10)
         ]),
-        new ExerciseRecord("2019-10-22T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-22").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10)
         ]),
-        new ExerciseRecord("2019-10-18T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-18").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10)
         ]),
-        new ExerciseRecord("2019-10-15T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-15").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10)
         ]),
-        new ExerciseRecord("2019-10-11T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-11").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 70), 10),
@@ -674,55 +674,55 @@ fitness_data.exercises.forEach( exer => {
       break;
     case ExerciseType.DECLINE_BENCH_PRESS:
       exer.exerciseRecords = [
-        new ExerciseRecord("2019-11-12T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-12").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 125), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 125), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 127.5), 9),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 130), 7)
         ]),
-        new ExerciseRecord("2019-11-8T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-8").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 125), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 127.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 127.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 127.5), 9)
         ]),
-        new ExerciseRecord("2019-11-5T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-5").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 120), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 120), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 120), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 120), 10)
         ]),
-        new ExerciseRecord("2019-11-1T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-1").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 117.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 117.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 117.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 117.5), 10)
         ]),
-        new ExerciseRecord("2019-10-25T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-25").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10)
         ]),
-        new ExerciseRecord("2019-10-22T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-22").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10)
         ]),
-        new ExerciseRecord("2019-10-18T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-18").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10)
         ]),
-        new ExerciseRecord("2019-10-15T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-15").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10)
         ]),
-        new ExerciseRecord("2019-10-11T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-11").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
@@ -732,7 +732,7 @@ fitness_data.exercises.forEach( exer => {
       break;
     case ExerciseType.FLY_MACHINE_CHEST:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
+        new ExerciseRecord(new Date("2019-11-12").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 8),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 7),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 7)
@@ -741,7 +741,7 @@ fitness_data.exercises.forEach( exer => {
       break;
     case ExerciseType.SKULL_CRUSHERS:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
+        new ExerciseRecord(new Date("2019-10-11").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 40), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 40), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 40), 10)
@@ -750,79 +750,149 @@ fitness_data.exercises.forEach( exer => {
       break;
     case ExerciseType.CABLE_TRICEP_PULLDOWNS:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
+        new ExerciseRecord(new Date("2019-11-12").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 47.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 47.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 47.5), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-11-18").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 42.5), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 42.5), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 42.5), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-11-5").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 40), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 40), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 40), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-11-1").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 39), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 39), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 39), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-25").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 37.5), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 37.5), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 37.5), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-22").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 34), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 34), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 34), 10)
         ])
       ];
       break;
     case ExerciseType.TRICEP_PRESS_MACHINE:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
+        new ExerciseRecord(new Date("2019-11-12").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 150), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-11-8").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-11-5").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 185), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 185), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 185), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-11-1").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-29").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 175), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 175), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 175), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-25").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 170), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 170), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 170), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-22").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-18").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-15").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-11").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 155), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 155), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 155), 10)
         ])
       ];
       break;
     case ExerciseType.BENT_OVER_ROWS:
       exer.exerciseRecords = [
-        new ExerciseRecord("2019-11-11T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-11").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 122.5), 9),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 122.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 125), 8),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 125), 8)
         ]),
-        new ExerciseRecord("2019-11-7T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-7").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 120), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 120), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 120), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 120), 10)
         ]),
-        new ExerciseRecord("2019-11-4T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-4").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 117.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 117.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 117.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 117.5), 10)
         ]),
-        new ExerciseRecord("2019-10-31T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-31").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10)
         ]),
-        new ExerciseRecord("2019-10-28T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-28").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10)
         ]),
-        new ExerciseRecord("2019-10-24T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-24").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10)
         ]),
-        new ExerciseRecord("2019-10-21T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-21").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 112.5), 10)
         ]),
-        new ExerciseRecord("2019-10-17T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-17").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10)
         ]),
-        new ExerciseRecord("2019-10-14T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-14").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10)
         ]),
-        new ExerciseRecord("2019-10-10T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-10").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
@@ -832,61 +902,61 @@ fitness_data.exercises.forEach( exer => {
       break;
     case ExerciseType.SHRUGS:
       exer.exerciseRecords = [
-        new ExerciseRecord("2019-11-11T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-11").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 9),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 192.5), 9),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 192.5), 8)
         ]),
-        new ExerciseRecord("2019-11-7T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-7").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 9),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 9),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 10)
         ]),
-        new ExerciseRecord("2019-11-4T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-4").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 187.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 187.5), 9),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 9),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 192.5), 10)
         ]),
-        new ExerciseRecord("2019-10-31T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-31").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 185), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 185), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 185), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 185), 10)
         ]),
-        new ExerciseRecord("2019-10-28T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-28").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 182.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 182.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 182.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 182.5), 10)
         ]),
-        new ExerciseRecord("2019-10-24T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-24").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 182.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 182.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 182.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 182.5), 10)
         ]),
-        new ExerciseRecord("2019-10-21T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-21").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10)
         ]),
-        new ExerciseRecord("2019-10-17T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-17").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10)
         ]),
-        new ExerciseRecord("2019-10-14T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-14").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10)
         ]),
-        new ExerciseRecord("2019-10-10T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-10").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10),
@@ -896,61 +966,61 @@ fitness_data.exercises.forEach( exer => {
       break;
     case ExerciseType.STIFF_LEG_DEADLIFTS:
       exer.exerciseRecords = [
-        new ExerciseRecord("2019-11-11T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-11").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 120), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 120), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 120), 10)
         ]),
-        new ExerciseRecord("2019-11-7T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-7").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 105), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10)
         ]),
-        new ExerciseRecord("2019-11-4T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-4").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 100), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 100), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 102.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 105), 10)
         ]),
-        new ExerciseRecord("2019-10-31T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-31").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 97.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 97.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 97.5), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 97.5), 10)
         ]),
-        new ExerciseRecord("2019-10-28T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-28").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 95), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 95), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 95), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 95), 10)
         ]),
-        new ExerciseRecord("2019-10-24T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-24").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 95), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 95), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 95), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 95), 10)
         ]),
-        new ExerciseRecord("2019-10-21T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-21").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 95), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 95), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 95), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 95), 10)
         ]),
-        new ExerciseRecord("2019-10-17T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-17").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 90), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 90), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 90), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 90), 10)
         ]),
-        new ExerciseRecord("2019-10-14T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-14").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 90), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 90), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 90), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 90), 10)
         ]),
-        new ExerciseRecord("2019-10-10T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-10").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 90), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 90), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 90), 10),
@@ -960,52 +1030,52 @@ fitness_data.exercises.forEach( exer => {
       break;
     case ExerciseType.ASSISTED_PULL_UPS:
       exer.exerciseRecords = [
-        new ExerciseRecord("2019-11-11T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-11").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -25), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -25), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -25), 10)
         ]),
-        new ExerciseRecord("2019-11-7T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-7").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -25), 9),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -25), 9),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -25), 10)
         ]),
-        new ExerciseRecord("2019-11-4T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-11-4").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -30), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -30), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -30), 10)
         ]),
-        new ExerciseRecord("2019-10-31T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-31").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -40), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -40), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -40), 10)
         ]),
-        new ExerciseRecord("2019-10-28T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-28").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -40), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -40), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -40), 10)
         ]),
-        new ExerciseRecord("2019-10-24T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-24").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -40), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -40), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -40), 10)
         ]),
-        new ExerciseRecord("2019-10-21T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-21").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -40), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -40), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -40), 10)
         ]),
-        new ExerciseRecord("2019-10-17T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-17").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -45), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -45), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -45), 10)
         ]),
-        new ExerciseRecord("2019-10-14T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-14").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -55), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -55), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -55), 10)
         ]),
-        new ExerciseRecord("2019-10-10T08:00:00.000Z", [
+        new ExerciseRecord(new Date("2019-10-10").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -55), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -55), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, -55), 10)
@@ -1014,7 +1084,7 @@ fitness_data.exercises.forEach( exer => {
       break;
     case ExerciseType.OVERHAND_CURLS:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
+        new ExerciseRecord(new Date("2019-11-11").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 15), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 15), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 15), 10)
@@ -1023,25 +1093,75 @@ fitness_data.exercises.forEach( exer => {
       break;
     case ExerciseType.UNDERHAND_CURLS:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
-          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 30), 10),
-          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 30), 10),
-          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 30), 10)
+        new ExerciseRecord(new Date("2019-11-11").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 30), 7),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 30), 7),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 30), 7)
+        ]),
+        new ExerciseRecord(new Date("2019-11-7").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 30), 8),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 30), 8),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 30), 7)
+        ]),
+        new ExerciseRecord(new Date("2019-11-4").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 25), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 25), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 25), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-17").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 25), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 25), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 25), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-14").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 20), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 20), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 20), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-10").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 20), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 20), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 20), 10)
         ])
       ];
       break;
     case ExerciseType.HAMMER_CURLS:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
-          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 30), 10),
-          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 30), 10),
-          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 30), 10)
+        new ExerciseRecord(new Date("2019-11-11").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 30), 6),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 30), 6),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 30), 6)
+        ]),
+        new ExerciseRecord(new Date("2019-11-7").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 30), 7),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 30), 7),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 30), 6)
+        ]),
+        new ExerciseRecord(new Date("2019-11-4").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 25), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 25), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 25), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-17").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 25), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 25), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 25), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-14").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 20), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 20), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 20), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-10").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 20), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 20), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 20), 10)
         ])
       ];
       break;
     case ExerciseType.SIDE_RAISES:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
+        new ExerciseRecord(new Date("2019-11-6").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 10), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 10), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 10), 10)
@@ -1050,7 +1170,7 @@ fitness_data.exercises.forEach( exer => {
       break;
     case ExerciseType.FRONT_RAISES:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
+        new ExerciseRecord(new Date("2019-11-6").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 10), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 10), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 10), 10)
@@ -1059,79 +1179,269 @@ fitness_data.exercises.forEach( exer => {
       break;
     case ExerciseType.SHOULDER_PRESS_MACHINE:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
+        new ExerciseRecord(new Date("2019-11-6").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 60), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 60), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 60), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-30").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 55), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 55), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 55), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-23").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 50), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 50), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 50), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-16").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 50), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 50), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 50), 10)
         ])
       ];
       break;
     case ExerciseType.LEG_PRESS_MACHINE:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
+        new ExerciseRecord(new Date("2019-11-13").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-11-6").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 175), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 175), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 175), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-30").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 170), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 170), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 170), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-23").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 165), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 165), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 165), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-16").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-9").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 150), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 150), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 150), 10)
         ])
       ];
       break;
     case ExerciseType.LEG_EXTENSION_MACHINE:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
+        new ExerciseRecord(new Date("2019-11-13").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 95), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 95), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 95), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-11-6").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 90), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 90), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 90), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-30").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 85), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 85), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 85), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-23").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 80), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 80), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 80), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-16").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-9").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10)
         ])
       ];
       break;
     case ExerciseType.LEG_CURL_MACHINE:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
+        new ExerciseRecord(new Date("2019-11-13").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 90), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 90), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 90), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-11-6").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 85), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 85), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 90), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-30").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 80), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 80), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 80), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-23").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-16").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-9").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 75), 10)
         ])
       ];
       break;
     case ExerciseType.CALF_EXTENSION_MACHINE:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
+        new ExerciseRecord(new Date("2019-11-13").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 200), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 200), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 200), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-11-6").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 175), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 175), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 175), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-30").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 170), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 170), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 170), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-23").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 165), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 165), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 165), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-16").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-9").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10)
         ])
       ];
       break;
     case ExerciseType.STANDING_GLUTE_MACHINE:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
+        new ExerciseRecord(new Date("2019-11-13").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 130), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 130), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 130), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-11-6").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 125), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 125), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 125), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-30").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 120), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 120), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 120), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-23").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 115), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-16").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 110), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-9").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 100), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 100), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 100), 10)
         ])
       ];
       break;
     case ExerciseType.HIP_ABDUCTION_MACHINE:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
+        new ExerciseRecord(new Date("2019-11-13").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 205), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 210), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 215), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-11-6").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 200), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 200), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 200), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-30").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 195), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 195), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 195), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-23").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-16").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-9").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 190), 10)
         ])
       ];
       break;
     case ExerciseType.HIP_ADDUCTION_MACHINE:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
+        new ExerciseRecord(new Date("2019-11-13").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 170), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 175), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 180), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-11-6").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 165), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 165), 10),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 165), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-30").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 160), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-23").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 155), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 155), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 155), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-16").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 155), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 155), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 155), 10)
+        ]),
+        new ExerciseRecord(new Date("2019-10-9").toISOString(), [
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 150), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 150), 10),
+          new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 150), 10)
         ])
       ];
       break;
     case ExerciseType.ABDOMINAL_CRUNCH_MACHINE:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
+        new ExerciseRecord(new Date("2019-11-6").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 35), 25),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 35), 25),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 35), 25),
@@ -1141,7 +1451,7 @@ fitness_data.exercises.forEach( exer => {
       break;
     case ExerciseType.OBLIQUE_SIDE_BEND:
       exer.exerciseRecords = [
-        new ExerciseRecord(new Date(), [
+        new ExerciseRecord(new Date("2019-11-6").toISOString(), [
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 45), 25),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 45), 25),
           new OneSet(null, null, new WeightUnits(UnitPrefType.IMPERIAL, 45), 25),
