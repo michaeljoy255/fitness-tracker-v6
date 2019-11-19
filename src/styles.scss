@@ -6,6 +6,37 @@
 }
 
 html {
-  background-color: #ffe3ae;
-  color: #363636;
+  background-color: #00090e;
+  color: #e2e2e2;
 }
+
+div#app {
+  width: 100%;
+  height: 91vh;
+  padding: 10px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+/* Home */
+h1.title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+div.routines {
+  display: flex;
+  flex-direction: column;
+}
+
+p.footer {
+  text-align: center;
+}
+
+/* Routine */

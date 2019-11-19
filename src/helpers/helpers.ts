@@ -17,53 +17,56 @@ export function getSeedData(url: string): Promise<any> {
 }
 
 /**
- *
+ * Not implemented
  * @param routines
  */
-export function buildHomePage(routines: Routine[]): void {
+export function constructHomePage(routines: Routine[]): void {
   let docFrag = document.createDocumentFragment();
-  let divHome = document.createElement("div");
+  let section = document.createElement("section");
+  let h1 = document.createElement("h1");
+  let div = document.createElement("div");
+  let p = document.createElement("p");
 
-  getRoutinesHtml(routines);
+  section.id = "home";
+  h1.className = "title";
+  h1.innerHTML = "Fitness Tracker";
+  div.className = "routines";
+  div.appendChild(getRoutinesFragment(routines));
+  p.className = "footer";
+  p.textContent = "WIP Fitness Tracker ~ Michael J";
+
+  section.appendChild(h1);
+  section.appendChild(div);
+  section.appendChild(p);
+  docFrag.appendChild(section);
+
+  // Add fragment to document
+  document.getElementById("app").appendChild(docFrag);
+
+  addRoutineButtonClickListeners(routines);
 }
 
-/**
- *
- * @param routines
- */
-function getRoutinesHtml(routines: Routine[]): void {
+function getRoutinesFragment(routines: Routine[]): Node {
   let docFrag = document.createDocumentFragment();
 
-  routines.forEach(rout => {
-    let div = document.createElement("div");
-    div.innerHTML = rout.name;
-    docFrag.appendChild(div);
+  routines.forEach((routine, index) => {
+    let id = `routine${index}`;
+    let button = document.createElement("button");
+    button.id = id;
+    button.textContent = routine.name;
+
+    docFrag.appendChild(button);
   });
 
-  document.getElementById("app").appendChild(docFrag);
+  return docFrag;
 }
 
-//   // HOME PAGE
-//   static buildHomePage(user) {
-//     let footer = "<p>WIP Fitness Tracker v5 ~ Michael J</p>";
-//     let title = "<h1 class='title'>Fitness Tracker</h1>";
-//     let btns = "";
-
-//     // Html for routine buttons
-//     user.routines.forEach( (rout, id) => {
-//         btns += `<a href='#' class='btn' id='routine${id}'>${rout.name}</a>`;
-//     });
-
-//     let divRoutines = `<div class="routines">${title}${btns}</div>`;
-//     let section = `<section class="home">${divRoutines}${footer}</section>`;
-
-//     // Set Home page html
-//     document.querySelector('div.home').innerHTML = section;
-
-//     // Click listeners for each routine button - added once html exists
-//     user.routines.forEach( (rout, id) => {
-//         document.querySelector(`#routine${id}`).addEventListener("click", () => {
-//             window.location.href = `activity.html?routine=${id}`;
-//         });
-//     });
-// }
+function addRoutineButtonClickListeners(routines: Routine[]): void {
+  for (let i = 0; i < routines.length; i++) {
+    let id = `routine${i}`;
+    document.getElementById(id).addEventListener("click", () => {
+      // @TODO: make functions to deconstruct home page and construct routine pages on click
+      alert("Get routine: " + routines[i].name);
+    });
+  }
+}

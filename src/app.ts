@@ -1,6 +1,6 @@
 import { UnitPrefType } from "./enums/enums";
 import { User } from "./classes/user";
-import { getSeedData, buildHomePage } from "./helpers/helpers";
+import { getSeedData, constructHomePage } from "./helpers/helpers";
 import "./styles.scss";
 
 /**
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", e => {
       user.routines = data.routines;
       console.log(user);
 
-      buildHomePage(user.routines);
+      constructHomePage(user.routines);
     })
     .catch(err => console.error(err));
 });
