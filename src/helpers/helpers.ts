@@ -1,7 +1,7 @@
 import { Routine } from "../classes/routine";
 
 /**
- * Fetches JSON exercise and routine data for seeding with
+ * Fetches JSON exercise and routine data for initial data seeding
  * @param url
  */
 export function getSeedData(url: string): Promise<any> {
@@ -17,7 +17,7 @@ export function getSeedData(url: string): Promise<any> {
 }
 
 /**
- * Not implemented
+ *
  * @param routines
  */
 export function constructHomePage(routines: Routine[]): void {
@@ -43,16 +43,19 @@ export function constructHomePage(routines: Routine[]): void {
   // Add fragment to document
   document.getElementById("app").appendChild(docFrag);
 
-  addRoutineButtonClickListeners(routines);
+  addRoutineClickListeners(routines);
 }
 
+/**
+ *
+ * @param routines
+ */
 function getRoutinesFragment(routines: Routine[]): Node {
   let docFrag = document.createDocumentFragment();
 
-  routines.forEach((routine, index) => {
-    let id = `routine${index}`;
+  routines.forEach(routine => {
     let button = document.createElement("button");
-    button.id = id;
+    button.id = routine.id;
     button.textContent = routine.name;
 
     docFrag.appendChild(button);
@@ -61,12 +64,19 @@ function getRoutinesFragment(routines: Routine[]): Node {
   return docFrag;
 }
 
-function addRoutineButtonClickListeners(routines: Routine[]): void {
-  for (let i = 0; i < routines.length; i++) {
-    let id = `routine${i}`;
-    document.getElementById(id).addEventListener("click", () => {
-      // @TODO: make functions to deconstruct home page and construct routine pages on click
-      alert("Get routine: " + routines[i].name);
+function addRoutineClickListeners(routines: Routine[]): void {
+  routines.forEach(routine => {
+    document.getElementById(routine.id).addEventListener("click", () => {
+      startRoutine(routine.id);
     });
-  }
+  });
+}
+
+/**
+ *
+ * @param routineId
+ */
+function startRoutine(routineId: string): void {
+  console.log(routineId);
+  // @TODO: make functions to deconstruct home page and construct routine pages on click
 }
