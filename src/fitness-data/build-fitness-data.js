@@ -26,12 +26,13 @@ const CategoryType = {
 }
 
 const ObjectiveType = {
-  NOTES: "Notes",
-  REST: "Rest",
-  TEMPO: "Tempo",
-  INTENSITY: "Intensity",
-  RESISTENCE: "Resistence",
-  INCLINE: "Incline"
+  NOTES: "Notes", // assignment
+  REST: "Rest", // hourglass_empty
+  TEMPO: "Tempo", // speed
+  INTENSITY: "Intensity", // whatshot
+  RESISTENCE: "Resistence", // fitness_center
+  INCLINE: "Incline", // signal_cellular_null
+  MAXIMUM: "Maximum" // priority_high
 }
 
 const IntensityType = {

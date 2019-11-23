@@ -36,12 +36,13 @@ export enum CategoryType {
  * Exercise objective to aim to meet
  */
 export enum ObjectiveType {
-  NOTES = "Notes",
-  REST = "Rest",
-  TEMPO = "Tempo",
-  INTENSITY = "Intensity",
-  RESISTENCE = "Resistence",
-  INCLINE = "Incline"
+  NOTES = "Notes", // assignment
+  REST = "Rest", // hourglass_empty
+  TEMPO = "Tempo", // speed
+  INTENSITY = "Intensity", // whatshot
+  RESISTENCE = "Resistence", // fitness_center
+  INCLINE = "Incline", // signal_cellular_null
+  MAXIMUM = "Maximum" // priority_high
 }
 
 /**
