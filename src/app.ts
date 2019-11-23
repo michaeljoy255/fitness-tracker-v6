@@ -1,6 +1,7 @@
 import { UnitPrefType } from "./enums/enums";
 import { User } from "./classes/user";
-import { getSeedData, constructHomePage } from "./helpers/helpers";
+import { getSeedData } from "./functions/helpers";
+import { constructHomePage } from "./functions/dom-constructing";
 import "./styles.scss";
 
 /**
@@ -9,12 +10,16 @@ import "./styles.scss";
 document.addEventListener("DOMContentLoaded", e => {
   let user = new User({ units: UnitPrefType.IMPERIAL });
 
+  // IMPORTANT #################################################################
+  // Add event listeners for Home and Routine pages on #app (event delegation)
+  // @TODO
+
   /**
    * @todo get rid of placeholder data and use real seed data
    */
   // Seed user data by fetching fitness JSON data
   getSeedData(
-    "https://michaeljoy255.github.io/fitness-tracker-v6/fitness-data.json"
+    "https://michaeljoy255.github.io/fitness-tracker-json/fitness-data.json"
   )
     .then(data => {
       // Seed user data
