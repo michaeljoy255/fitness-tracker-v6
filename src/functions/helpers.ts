@@ -44,7 +44,7 @@ export function loadEventListeners(user: User): void {
     routineIds.push(routine.id);
   });
 
-  // Add Routine button event listeners
+  // Routine buttons
   app.addEventListener("mousedown", e => {
     // Start routine with Id of clicked element if its in the routines array
     if (routineIds.includes((e.target as HTMLElement).id)) {
@@ -52,10 +52,17 @@ export function loadEventListeners(user: User): void {
     }
   });
 
-  // Add results data event listener
+  // Results button
   app.addEventListener("mousedown", e => {
     if ((e.target as HTMLElement).id === "results-btn") {
       getRoutineSummary();
+    }
+  });
+
+  // Cancel button
+  app.addEventListener("mousedown", e => {
+    if ((e.target as HTMLElement).id === "cancel") {
+      cancelRoutine();
     }
   });
 }
@@ -66,4 +73,8 @@ function startRoutineById(routineId: string, user: User): void {
 
 function getRoutineSummary(): void {
   console.log("Routine summary!");
+}
+
+function cancelRoutine(): void {
+  console.log("Routine canceled!");
 }

@@ -68,3 +68,24 @@ export function getExerciseFragment(exercise: Exercise): Node {
 
   return exerciseFrag;
 }
+
+/**
+ * Constructs DOM nodes containing the results button and textarea
+ * @returns Node
+ */
+export function getFooter(): Node {
+  let footerFrag = document.createDocumentFragment(),
+    footerDiv = document.createElement("div"),
+    resultsBtn = document.createElement("button"),
+    textarea = document.createElement("textarea");
+
+  resultsBtn.id = "results-btn";
+  resultsBtn.textContent = "Submit";
+
+  footerDiv.appendChild(resultsBtn);
+  footerDiv.appendChild(textarea);
+
+  footerFrag.appendChild(footerDiv);
+
+  return footerFrag;
+}

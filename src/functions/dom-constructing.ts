@@ -3,7 +3,8 @@ import { User } from "../classes/user";
 import {
   getRoutinesFragment,
   getHeaderFragment,
-  getExerciseFragment
+  getExerciseFragment,
+  getFooter
 } from "./dom-fragments";
 
 /**
@@ -43,18 +44,30 @@ export function constructHomePage(routines: Routine[]): void {
 export function constructRoutinePage(routineId: string, user: User): void {
   const app = document.getElementById("app"),
     routineFrag = document.createDocumentFragment(),
-    routineSection = document.createElement("section");
+    routineSection = document.createElement("section"),
+    titleDiv = document.createElement("div");
 
+  // Header
   routineSection.id = "routine-page";
   routineSection.appendChild(getHeaderFragment());
 
-  // Loop through exercises in the current routine
-  const exerciseIds = user.routines.find(obj => obj.id === routineId)
+  // Routine Title
+  titleDiv.className = "title";
+  titleDiv.textContent = `${
+    user.routines.find(routine => routine.id === routineId).name
+  }`;
+  routineSection.appendChild(titleDiv);
+
+  // Routine Exercises - Loop through exercises in the current routine
+  const exerciseIds = user.routines.find(routine => routine.id === routineId)
     .exerciseIds;
   exerciseIds.forEach(exerciseId => {
-    let exercise = user.exercises.find(obj => obj.id === exerciseId);
+    let exercise = user.exercises.find(exercise => exercise.id === exerciseId);
     routineSection.appendChild(getExerciseFragment(exercise));
   });
+
+  // Footer
+  routineSection.appendChild(getFooter());
 
   routineFrag.appendChild(routineSection);
 
