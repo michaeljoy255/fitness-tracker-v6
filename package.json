@@ -5,9 +5,8 @@
   "main": "app.ts",
   "scripts": {
     "start": "webpack-dev-server  --config webpack.dev.js",
-    "build": "npm run build:prod && npm run build:json && npm run deploy",
+    "build": "npm run build:prod && npm run deploy",
     "build:prod": "webpack --config webpack.prod.js",
-    "build:json": "node src/fitness-data/build-fitness-data.js > dist/fitness-data.json",
     "deploy": "gh-pages -d dist"
   },
   "repository": {

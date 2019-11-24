@@ -1,18 +1,24 @@
 import { Routine } from "../classes/routine";
-import { getHeaderFragment, getRoutinesFragment } from "./dom-fragments";
+import { User } from "../classes/user";
+import {
+  getRoutinesFragment,
+  getHeaderFragment,
+  getExerciseFragment
+} from "./dom-fragments";
 
 /**
- *
- * @param routines
+ * Constructs DOM nodes for Home Page
+ * @param routines - Routine[]
  */
 export function constructHomePage(routines: Routine[]): void {
-  let docFrag = document.createDocumentFragment();
-  let section = document.createElement("section");
-  let h1 = document.createElement("h1");
-  let div = document.createElement("div");
-  let p = document.createElement("p");
+  let app = document.getElementById("app"),
+    homeFrag = document.createDocumentFragment(),
+    homeSection = document.createElement("section"),
+    h1 = document.createElement("h1"),
+    div = document.createElement("div"),
+    p = document.createElement("p");
 
-  section.id = "home";
+  homeSection.id = "home-page";
   h1.className = "title";
   h1.innerHTML = "Fitness Tracker";
   div.className = "routines";
@@ -20,35 +26,39 @@ export function constructHomePage(routines: Routine[]): void {
   p.className = "footer";
   p.textContent = "WIP Fitness Tracker ~ Michael J";
 
-  section.appendChild(h1);
-  section.appendChild(div);
-  section.appendChild(p);
-  docFrag.appendChild(section);
+  homeSection.appendChild(h1);
+  homeSection.appendChild(div);
+  homeSection.appendChild(p);
 
-  // Add fragment to document
-  document.getElementById("app").appendChild(docFrag);
+  homeFrag.appendChild(homeSection);
 
-  addRoutineClickListeners(routines);
-}
-
-function constructRoutinePage(): void {
-  // @TODO
-}
-
-function addRoutineClickListeners(routines: Routine[]): void {
-  routines.forEach(routine => {
-    document.getElementById(routine.id).addEventListener("click", startRoutine);
-  });
+  app.appendChild(homeFrag);
 }
 
 /**
- *
- * @param routineId
+ * Constructs DOM nodes for a Routine Page
+ * @param routineId - string
+ * @param user - Object
  */
-function startRoutine(e: any): void {
-  console.log(e.target.id);
+export function constructRoutinePage(routineId: string, user: User): void {
+  const app = document.getElementById("app"),
+    routineFrag = document.createDocumentFragment(),
+    routineSection = document.createElement("section");
 
-  document.getElementById("app").appendChild(getHeaderFragment());
-  // Replaces home page with routine page
-  //appDiv.replaceChild(sectionRoutine, sectionHome);
+  routineSection.id = "routine-page";
+  routineSection.appendChild(getHeaderFragment());
+
+  // Loop through exercises in the current routine
+  const exerciseIds = user.routines.find(obj => obj.id === routineId)
+    .exerciseIds;
+  exerciseIds.forEach(exerciseId => {
+    let exercise = user.exercises.find(obj => obj.id === exerciseId);
+    routineSection.appendChild(getExerciseFragment(exercise));
+  });
+
+  routineFrag.appendChild(routineSection);
+
+  // Replaces home page with routine page once all fragments are ready
+  const sectionHome = document.getElementById("home-page");
+  app.replaceChild(routineFrag, sectionHome);
 }

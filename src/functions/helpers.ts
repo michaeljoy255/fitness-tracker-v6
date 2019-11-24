@@ -1,6 +1,10 @@
+import { User } from "../classes/user";
+import { constructRoutinePage } from "./dom-constructing";
+
 /**
  * Fetches JSON exercise and routine data for initial data seeding
- * @param url
+ * @param url - string
+ * @returns promise
  * @todo convert this to an async function
  */
 export function getSeedData(url: string): Promise<any> {
@@ -16,12 +20,50 @@ export function getSeedData(url: string): Promise<any> {
 }
 
 /**
- * Returns date string formatted like MM/DD/YYYY
+ * Returns date string formatted as MM/DD/YYYY
+ * @returns string
  */
 export function getDateString(): string {
-  const date = new Date();
-  const year = date.getFullYear();
-  const month = date.getMonth() + 1;
-  const day = date.getDate();
+  const date = new Date(),
+    year = date.getFullYear(),
+    month = date.getMonth() + 1,
+    day = date.getDate();
   return month + "/" + day + "/" + year;
+}
+
+/**
+ * Adds delegated event listeners to the #app
+ * @param user - Object
+ */
+export function loadEventListeners(user: User): void {
+  const app = document.getElementById("app");
+  const routineIds = [];
+
+  // Load routine Ids into an array for comparision later
+  user.routines.forEach(routine => {
+    routineIds.push(routine.id);
+  });
+
+  // Add Routine button event listeners
+  app.addEventListener("mousedown", e => {
+    // Start routine with Id of clicked element if its in the routines array
+    if (routineIds.includes((e.target as HTMLElement).id)) {
+      startRoutineById((e.target as HTMLElement).id, user);
+    }
+  });
+
+  // Add results data event listener
+  app.addEventListener("mousedown", e => {
+    if ((e.target as HTMLElement).id === "results-btn") {
+      getRoutineSummary();
+    }
+  });
+}
+
+function startRoutineById(routineId: string, user: User): void {
+  constructRoutinePage(routineId, user);
+}
+
+function getRoutineSummary(): void {
+  console.log("Routine summary!");
 }
