@@ -6,6 +6,7 @@ import {
   getExerciseFragment,
   getFooter
 } from "./dom-fragments";
+import { routineTimer } from "./helpers";
 
 /**
  * Constructs DOM nodes for Home Page
@@ -75,4 +76,7 @@ export function constructRoutinePage(routineId: string, user: User): void {
   // Replaces home page with routine page once all fragments are ready
   const sectionHome = document.getElementById("home-page");
   app.replaceChild(routineFrag, sectionHome);
+
+  // Start routine timer
+  routineTimer(new Date().getTime());
 }

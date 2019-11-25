@@ -1,7 +1,7 @@
 import { Routine } from "../classes/routine";
 import { Exercise } from "../classes/exercise";
 import { getDateString } from "./helpers";
-import { ObjectiveType, Icon } from "../enums/enums";
+import { Icon } from "../enums/enums";
 
 /**
  * Constructs DOM nodes containing routine buttons
