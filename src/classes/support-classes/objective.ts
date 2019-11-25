@@ -5,10 +5,12 @@ import { ObjectiveType } from "../../enums/enums";
  */
 export class Objective {
   type: ObjectiveType;
+  icon: string;
   text: string;
 
-  constructor({ type = null, text = null } = {}) {
+  constructor({ type = null, icon = null, text = null } = {}) {
     this.type = type;
+    this.icon = icon;
     this.text = text;
   }
 }

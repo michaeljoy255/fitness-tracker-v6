@@ -11,7 +11,6 @@ export class Exercise {
   readonly id: string;
   name: ExerciseType;
   category: CategoryType;
-  desc: string;
   inputs: Inputs;
   objectives: Objective[];
   exerciseRecords: ExerciseRecord[];
@@ -19,7 +18,6 @@ export class Exercise {
   constructor({
     name = null,
     category = null,
-    desc = null,
     inputs = null,
     objectives = [],
     exerciseRecords = []
@@ -27,7 +25,6 @@ export class Exercise {
     this.id = uuid.v4();
     this.name = name;
     this.category = category;
-    this.desc = desc;
     this.inputs = inputs;
     this.objectives = objectives;
     this.exerciseRecords = exerciseRecords;

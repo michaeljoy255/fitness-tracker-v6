@@ -1,23 +1,11 @@
-import { DistanceUnits } from "./distanceUnits";
-import { WeightUnits } from "./weightUnits";
-
 /**
  * @todo
  */
 export class OneSet {
-  duration: string; // hours : minutes : seconds
-  distance: DistanceUnits; // DistanceUnits
-  weight: WeightUnits; // WeightUnits
+  weight: number;
   reps: number;
 
-  constructor({
-    duration = null,
-    distance = null,
-    weight = null,
-    reps = null
-  } = {}) {
-    this.duration = duration;
-    this.distance = distance;
+  constructor({ weight = null, reps = null } = {}) {
     this.weight = weight;
     this.reps = reps;
   }

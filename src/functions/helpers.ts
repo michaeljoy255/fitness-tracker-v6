@@ -61,7 +61,7 @@ export function loadEventListeners(user: User): void {
 
   // Cancel button
   app.addEventListener("mousedown", e => {
-    if ((e.target as HTMLElement).id === "cancel") {
+    if ((e.target as HTMLElement).id === "cancel-btn") {
       cancelRoutine();
     }
   });

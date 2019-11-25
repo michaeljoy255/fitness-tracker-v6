@@ -36,13 +36,29 @@ export enum CategoryType {
  * Exercise objective to aim to meet
  */
 export enum ObjectiveType {
-  NOTES = "Notes", // assignment
-  REST = "Rest", // hourglass_empty
-  TEMPO = "Tempo", // speed
-  INTENSITY = "Intensity", // whatshot
-  RESISTENCE = "Resistence", // fitness_center
-  INCLINE = "Incline", // signal_cellular_null
-  MAXIMUM = "Maximum" // priority_high
+  REST = "Rest",
+  TEMPO = "Tempo",
+  INTENSITY = "Intensity",
+  RESISTENCE = "Resistence",
+  INCLINE = "Incline",
+  MAXIMUM = "Maximum",
+  NOTES = "Notes"
+}
+
+/**
+ * Material icons used in the project
+ */
+export enum Icon {
+  REST = "hourglass_empty",
+  TEMPO = "speed",
+  INTENSITY = "whatshot",
+  RESISTENCE = "fitness_center",
+  INCLINE = "signal_cellular_null",
+  MAXIMUM = "priority_high",
+  NOTES = "assignment",
+  CANCEL = "cancel",
+  CALENDAR = "calendar_today",
+  TIMER = "timer"
 }
 
 /**

@@ -16,19 +16,16 @@ export function constructHomePage(routines: Routine[]): void {
     homeFrag = document.createDocumentFragment(),
     homeSection = document.createElement("section"),
     h1 = document.createElement("h1"),
-    div = document.createElement("div"),
     p = document.createElement("p");
 
   homeSection.id = "home-page";
-  h1.className = "title";
+  h1.className = "app-title";
   h1.innerHTML = "Fitness Tracker";
-  div.className = "routines";
-  div.appendChild(getRoutinesFragment(routines));
-  p.className = "footer";
+  p.className = "byline";
   p.textContent = "WIP Fitness Tracker ~ Michael J";
 
   homeSection.appendChild(h1);
-  homeSection.appendChild(div);
+  homeSection.appendChild(getRoutinesFragment(routines));
   homeSection.appendChild(p);
 
   homeFrag.appendChild(homeSection);
@@ -52,7 +49,7 @@ export function constructRoutinePage(routineId: string, user: User): void {
   routineSection.appendChild(getHeaderFragment());
 
   // Routine Title
-  titleDiv.className = "title";
+  titleDiv.className = "routine-title";
   titleDiv.textContent = `${
     user.routines.find(routine => routine.id === routineId).name
   }`;
@@ -61,9 +58,13 @@ export function constructRoutinePage(routineId: string, user: User): void {
   // Routine Exercises - Loop through exercises in the current routine
   const exerciseIds = user.routines.find(routine => routine.id === routineId)
     .exerciseIds;
+
   exerciseIds.forEach(exerciseId => {
-    let exercise = user.exercises.find(exercise => exercise.id === exerciseId);
-    routineSection.appendChild(getExerciseFragment(exercise));
+    let foundExercise = user.exercises.find(
+      exercise => exercise.id === exerciseId
+    );
+
+    routineSection.appendChild(getExerciseFragment(foundExercise));
   });
 
   // Footer
