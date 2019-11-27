@@ -197,6 +197,8 @@ function getExerciseInputsFragment(exercise: Exercise): Node {
       setNumberP.textContent = `${i + 1}`;
       weightInput.id = `${exercise.id}_weight${i}`;
       repsInput.id = `${exercise.id}_rep${i}`;
+      weightInput.setAttribute("type", "number");
+      repsInput.setAttribute("type", "number");
 
       weightInput.placeholder = `${oneSet.weight} lbs`;
       repsInput.placeholder = `${oneSet.reps} reps`;
