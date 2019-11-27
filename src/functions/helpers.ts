@@ -215,7 +215,6 @@ function getRoutineSummary(user: User): void {
   textarea.setSelectionRange(0, 99999); // For mobile devices
 
   try {
-    console.log("Attempting to copy text...");
     document.execCommand("copy");
   } catch (err) {
     console.error("Unable to copy text!", err);

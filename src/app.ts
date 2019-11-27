@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", e => {
       user.exercises = data.exercises;
       user.routines = data.routines;
 
-      console.log(user);
+      //console.log(user);
 
       constructHomePage(user.routines);
 
