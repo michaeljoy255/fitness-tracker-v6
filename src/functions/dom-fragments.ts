@@ -111,7 +111,7 @@ function getExerciseObjectivesFragment(exercise: Exercise): Node {
     const objectiveSpan = document.createElement("span");
     objectiveSpan.className = "objective";
     objectiveSpan.innerHTML = `
-      <i class="material-icons">${objective.icon}</i>
+      <i class="material-icons ${objective.icon}">${objective.icon}</i>
       <p>${objective.text}</p>
     `;
 
@@ -128,20 +128,18 @@ function getExerciseObjectivesFragment(exercise: Exercise): Node {
  */
 function getExerciseInputsFragment(exercise: Exercise): Node {
   const inputsFrag = document.createDocumentFragment(),
-    inputsDiv = document.createElement("div"),
-    setDiv = document.createElement("div");
+    inputsDiv = document.createElement("div");
 
   inputsDiv.className = "exercise-inputs";
-  setDiv.className = "inputs-sets";
 
   if (exercise.inputs.hasDuration || exercise.inputs.hasDistance) {
     // Duration first for top div - (basing off the first record only - not ideal)
     if (exercise.inputs.hasDuration) {
       const div = document.createElement("div");
-      div.className = "inputs-col";
+      div.className = "inputs-col duration";
       div.innerHTML = `
         <p class='top-text'>Duration</p>
-        <input type='number' id='duration' placeholder='${exercise.exerciseRecords[0].duration} minutes'>
+        <input type='number' id='${exercise.id}_duration' placeholder='${exercise.exerciseRecords[0].duration} minutes'>
       `;
       inputsDiv.appendChild(div);
     }
@@ -149,10 +147,10 @@ function getExerciseInputsFragment(exercise: Exercise): Node {
     // Distance second for top div - (basing off the first record only - not ideal)
     if (exercise.inputs.hasDistance) {
       const div = document.createElement("div");
-      div.className = "inputs-col";
+      div.className = "inputs-col distance";
       div.innerHTML = `
         <p class='top-text'>Distance</p>
-        <input type='number' id='distance' placeholder='${exercise.exerciseRecords[0].distance} miles'>
+        <input type='number' id='${exercise.id}_distance' placeholder='${exercise.exerciseRecords[0].distance} miles'>
       `;
       inputsDiv.appendChild(div);
     }
@@ -163,9 +161,9 @@ function getExerciseInputsFragment(exercise: Exercise): Node {
       weightsDiv = document.createElement("div"),
       repsDiv = document.createElement("div");
 
-    setNumbersDiv.className = "inputs-col";
-    weightsDiv.className = "inputs-col";
-    repsDiv.className = "inputs-col";
+    setNumbersDiv.className = "inputs-col sets";
+    weightsDiv.className = "inputs-col weight";
+    repsDiv.className = "inputs-col reps";
 
     exercise.exerciseRecords[0].sets.forEach((oneSet, i) => {
       // Top Text only added once
@@ -196,9 +194,9 @@ function getExerciseInputsFragment(exercise: Exercise): Node {
       weightInput.className = "weight-input";
       repsInput.className = "rep-input";
 
-      setNumberP.textContent = `${i}`;
-      weightInput.id = `weight${i}`;
-      repsInput.id = `rep${i}`;
+      setNumberP.textContent = `${i + 1}`;
+      weightInput.id = `${exercise.id}_weight${i}`;
+      repsInput.id = `${exercise.id}_rep${i}`;
 
       weightInput.placeholder = `${oneSet.weight} lbs`;
       repsInput.placeholder = `${oneSet.reps} reps`;
@@ -228,6 +226,7 @@ export function getFooter(): Node {
 
   resultsBtn.textContent = "Submit";
   resultsBtn.id = "results-btn";
+  textarea.id = "results-text";
 
   footerDiv.className = "footer";
   footerDiv.appendChild(resultsBtn);

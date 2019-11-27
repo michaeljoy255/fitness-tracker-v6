@@ -1,4 +1,3 @@
-import { UnitPrefType } from "./enums/enums";
 import { User } from "./classes/user";
 import { getSeedData, loadEventListeners } from "./functions/helpers";
 import { constructHomePage } from "./functions/dom-constructing";
@@ -8,7 +7,7 @@ import "./styles.scss";
  * Main
  */
 document.addEventListener("DOMContentLoaded", e => {
-  let user = new User({ units: UnitPrefType.IMPERIAL });
+  let user = new User();
 
   // Seed user data by fetching fitness JSON data
   getSeedData(

@@ -1,11 +1,11 @@
-import { ObjectiveType } from "../../enums/enums";
+import { ObjectiveType, Icon } from "../../enums/enums";
 
 /**
  * @todo
  */
 export class Objective {
   type: ObjectiveType;
-  icon: string;
+  icon: Icon;
   text: string;
 
   constructor({ type = null, icon = null, text = null } = {}) {

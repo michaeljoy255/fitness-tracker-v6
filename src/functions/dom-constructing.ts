@@ -6,7 +6,7 @@ import {
   getExerciseFragment,
   getFooter
 } from "./dom-fragments";
-import { routineTimer } from "./helpers";
+import { routineTimer, getDateString } from "./helpers";
 
 /**
  * Constructs DOM nodes for Home Page
@@ -51,6 +51,7 @@ export function constructRoutinePage(routineId: string, user: User): void {
 
   // Routine Title
   titleDiv.className = "routine-title";
+  titleDiv.id = routineId;
   titleDiv.textContent = `${
     user.routines.find(routine => routine.id === routineId).name
   }`;

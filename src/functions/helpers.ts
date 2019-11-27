@@ -1,5 +1,6 @@
 import { User } from "../classes/user";
 import { constructHomePage, constructRoutinePage } from "./dom-constructing";
+import { ExerciseRecord } from "../classes/support-classes/exerciseRecord";
 
 /**
  * Fetches JSON exercise and routine data for initial data seeding
@@ -37,15 +38,16 @@ export function getDateString(): string {
  */
 export function loadEventListeners(user: User): void {
   const app = document.getElementById("app");
-  const routineIds = [];
-
-  // Load routine Ids into an array for comparision later
-  user.routines.forEach(routine => {
-    routineIds.push(routine.id);
-  });
 
   // Routine buttons
   app.addEventListener("mousedown", e => {
+    const routineIds = [];
+
+    // Load routine Ids into an array for comparision
+    user.routines.forEach(routine => {
+      routineIds.push(routine.id);
+    });
+
     // Start routine with Id of clicked element if its in the routines array
     if (routineIds.includes((e.target as HTMLElement).id)) {
       startRoutineById((e.target as HTMLElement).id, user);
@@ -55,7 +57,7 @@ export function loadEventListeners(user: User): void {
   // Results button
   app.addEventListener("mousedown", e => {
     if ((e.target as HTMLElement).id === "results-btn") {
-      getRoutineSummary();
+      getRoutineSummary(user);
     }
   });
 
@@ -69,10 +71,6 @@ export function loadEventListeners(user: User): void {
 
 function startRoutineById(routineId: string, user: User): void {
   constructRoutinePage(routineId, user);
-}
-
-function getRoutineSummary(): void {
-  console.log("Routine summary!");
 }
 
 function cancelRoutine(user: User): void {
@@ -118,88 +116,99 @@ function stopRoutineTimer() {
   clearTimeout(timeId);
 }
 
-function finishRoutine() {
-  // ready
-}
+function getRoutineSummary(user: User): void {
+  user.results = []; // empty results array
+  user.results.push(getDateString());
+  user.results.push(
+    `Total Time: ${document.querySelector("#running-timer").textContent}`
+  );
+  user.results.push(""); // empty space
 
-// Ends the current activity and records the data
-function finishActivity(user, routineId) {
-  /*
-  let activityData = [];
-  activityData.push(View.getDateString());
+  // Get exercise Ids for current routine
+  const exerciseIds: string[] = [];
+  document.querySelectorAll(".exercise").forEach(exerciseNode => {
+    exerciseIds.push(exerciseNode.id);
+  });
 
-  // Get activity data from fields
-  let exerciseIds = user.routines.get(Number(routineId)).exerciseIds;
-  exerciseIds.forEach(exid => {
-    var id = "";
-    // Constructing the id to find the input and get its value
-    if (user.getExerciseById(exid).category === CategoryEnum.CARDIO) {
-      let cardioDuration = "";
-      let cardioDistance = "";
+  exerciseIds.forEach(exerId => {
+    // Find each exercise from the Ids array
+    const curExercise = user.exercises.find(exercise => exercise.id === exerId);
 
-      id = `ex${exid}-duration`;
-      cardioDuration += document.getElementById(id).value;
+    // Exercise had duration and distance inputs
+    if (curExercise.inputs.hasDuration && curExercise.inputs.hasDistance) {
+      const duration = (document.getElementById(
+        `${curExercise.id}_duration`
+      ) as HTMLInputElement).value;
 
-      id = `ex${exid}-distance`;
-      cardioDistance += document.getElementById(id).value;
+      const distance = (document.getElementById(
+        `${curExercise.id}_distance`
+      ) as HTMLInputElement).value;
 
-      // in case no value was entered
-      if (cardioDuration === "") {
-        cardioDuration = "0";
-      }
-      if (cardioDistance === "") {
-        cardioDistance = "0";
-      }
+      user.results.push(`-----${curExercise.name}-----
+          new ExerciseRecord({
+          duration: ${duration === "" ? "0" : duration},
+          distance: ${distance === "" ? "0" : distance},
+          sets: []
+        })
+      `);
 
-      activityData.push(`${cardioDuration} (${cardioDistance})`);
-    } else if (user.getExerciseById(exid).category === CategoryEnum.MISC) {
-      let miscDuration = "";
+      // Exercise has duration input only
+    } else if (curExercise.inputs.hasDuration) {
+      const duration = (document.getElementById(
+        `${curExercise.id}_duration`
+      ) as HTMLInputElement).value;
 
-      id = `ex${exid}-duration`;
-      miscDuration = document.getElementById(id).value;
+      user.results.push(`-----${curExercise.name}-----
+          new ExerciseRecord({
+          duration: ${duration === "" ? "0" : duration},
+          distance: null,
+          sets: []
+        })
+      `);
 
-      // in case no value was entered
-      if (miscDuration === "") {
-        miscDuration = "0";
-      }
+      // Exercise has weight and reps inputs
+    } else if (curExercise.inputs.hasWeight && curExercise.inputs.hasReps) {
+      let wipRecord = `-----${curExercise.name}-----
+        new ExerciseRecord({
+          duration: null,
+          distance: null,
+          sets: [`;
 
-      activityData.push(miscDuration);
-    } else {
-      let weightId = "";
-      let repId = "";
-      let setText = "";
+      // Look at previous record for number of sets
+      curExercise.exerciseRecords[0].sets.forEach((oneSet, i) => {
+        const weight = (document.getElementById(
+          `${curExercise.id}_weight${i}`
+        ) as HTMLInputElement).value;
 
-      // Look for set data in the record - using [0] is not ideal
-      const sets = user.getExerciseById(exid).records[0].sets;
+        const reps = (document.getElementById(
+          `${curExercise.id}_rep${i}`
+        ) as HTMLInputElement).value;
 
-      sets.forEach((oneSet, i) => {
-        weightId = `ex${exid}-weight${i}`;
-        repId = `ex${exid}-rep${i}`;
-
-        // Both weight and rep values must be found to accept data
-        if (
-          document.getElementById(weightId).value &&
-          document.getElementById(repId).value
-        ) {
-          let weight = document.getElementById(weightId).value;
-          let rep = document.getElementById(repId).value;
-
-          setText += `${weight}x${rep}, `;
-        }
+        wipRecord += `
+          new OneSet({
+            weight: ${weight === "" ? "0" : weight},
+            reps: ${reps === "" ? "0" : reps}
+          }),`;
       });
-      // Trim off trailing ', '
-      activityData.push(setText.slice(0, -2));
+      // trim off trailing ','
+      wipRecord = wipRecord.slice(0, -1);
+
+      // Close wip record
+      wipRecord += `
+        ]})
+      `;
+
+      user.results.push(wipRecord);
     }
   });
 
-  activityData.push(document.getElementById("timer").innerHTML);
-
   // Paste formatted data to textarea
-  let textarea = document.getElementById("results");
-  textarea.value = "";
+  // any is not ideal
+  const textarea: any = document.getElementById("results-text");
+  textarea.textContent = "";
 
-  activityData.forEach(entry => {
-    textarea.value += entry + "\n";
+  user.results.forEach(entry => {
+    textarea.textContent += entry + "\n";
   });
 
   textarea.select();
@@ -209,7 +218,6 @@ function finishActivity(user, routineId) {
     console.log("Attempting to copy text...");
     document.execCommand("copy");
   } catch (err) {
-    console.err("Unable to copy text!", err);
+    console.error("Unable to copy text!", err);
   }
-  */
 }
