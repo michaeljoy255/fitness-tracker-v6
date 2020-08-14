@@ -1,2 +1,3 @@
 # fitness-tracker-v6
-Desc TBA
+
+_NOTE: Archiving Summer 2020._
